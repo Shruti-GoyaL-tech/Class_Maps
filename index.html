@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacant ClassRoom Settler</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search For classroom</a></li>
+        <li><a href="#create">Add College Data</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <div class="home" id="home">
+        <div class="text">
+            <h1>Are you tired of finding a vacant room to study in your college</h1>
+            <h2>Don't Worry</h2>
+            <h3>Here is the solution of your problem. This website contains data of empty classes in departments of yur college. Just check for your college and find a vacant classroom.</h3>
+        </div>
+    </div>
+    <div class="separator"></div>
+
+    <!-- sEARCHING fOR COLLEGE -->
+    <div class="search" id="search">
+        <div class="img"><img src="classroom_Images/class8.jpg" alt="crossrom image"></div>
+        <div class="searchbar">
+            <div class="selector">Choose your Institute <div class="selectorinner"></div></div>
+            <div class="results"></div>
+        </div>
+    </div>
+    <div class="separator"></div>
+
+    <!-- CREATING ENTRY FOR A COLLEGE -->
+    <div class="create" id="create">
+        <div class="creatingEntry">
+            <div class="NewCollege">
+                <div>
+                    <label for="text">Enter college name:</label>
+                    <input type="text" id="college-name" placeholder="Enter College Name">
+                </div>
+                <button id="submit-college">Submit</button>
+                <div id="result"></div>
+            </div>
+            <form id="input-form">
+                <p>
+                    <label for="hour">Hour:</label>
+                    <input type="number" id="hour" min="9" max="16">
+                </p>
+                <p>
+                    <label for="day">Day:</label>
+                    <input type="number" id="day" min="1" max="5">
+                </p>
+                <p>
+                    <label for="room-numbers">Room Numbers:</label>
+                    <input type="text" id="room-numbers" placeholder="Enter room numbers separated by commas">
+                </p>
+                <button id="submit">Submit</button>
+            </form>
+            <div id="submission"></div>
+        </div>
+        <div class="imageInCreate"><img src="classroom_Images/class8.jpg" alt="classroom_Images"></div>
+    </div>
+    <div class="separator"></div>
+
+    <!-- ABOUT US SECTIONA -->
+    <div class="about" id="about">
+        <div class="bg">
+            <h1>Hoping It was Helpful</h1>
+            <h2>Enjoy Studying</h2>
+            <h4>Gmail - goyalshruti1209@gmail.com</h4>
+            <div class="urls">
+                <h2>Follow Us On</h2>
+                <a href="https://www.linkedin.com/in/shruti-goyal-747718259">LinkedIn</a>
+                <a href="https://github.com/Shruti-GoyaL-tech">Github</a>
+            </div>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
