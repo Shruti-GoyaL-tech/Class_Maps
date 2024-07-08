@@ -159,4 +159,9 @@ function bindSelectEvent() {
       }
       addsearchbar();
     });
-    
+
+    // Hamburger in Navigation Bar
+    document.getElementById('hamburger').addEventListener('click', function() {
+        document.getElementById('navbar').classList.toggle('active');
+      });
+      
