@@ -226,3 +226,65 @@ nav>ul>li>a:hover{
         max-width: 400px;
     }
 }
+
+/* Hamburger in Navigation Bar */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    background-color: black;
+    opacity: 0.9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Adjust as needed to align with the previous navbar */
+    top: 10px; /* Adjust as needed to align with the previous navbar */
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .hamburger {
+      display: block;
+      position: absolute; /* Ensures it stays at the corner */
+    }
+  
+    nav{
+        padding: 0px;
+    }
+    
+    nav > ul {
+      margin: 0px;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav > ul > li {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: 1px solid white;
+    }
+  
+    nav > ul > li:last-child {
+      border-bottom: none;
+    }
+  
+    nav.active > ul {
+      display: flex;
+    }
+  
+    .imageInCreate, .img{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+      nav > ul{
+          flex-direction: column;
+      }
+      .creatingEntry > div, .creatingEntry form {
+          width: 65%;
+          max-width: 400px;
+      }
+  }
